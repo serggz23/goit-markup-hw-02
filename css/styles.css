@@ -27,8 +27,7 @@ a:active {
 
 nav,
 footer,
-header,
-aside {
+header {
   display: block;
 }
 
@@ -77,10 +76,7 @@ h6 {
 .header {
   padding: 24px 215px 24px 215px;
   flex-wrap: wrap;
-}
-
-.header-nav,
-.header-contacts {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   align-items: center;
 }
 
@@ -137,6 +133,7 @@ h6 {
   background-color: var(--main-dark-color);
 }
 
+/* Hero */
 .hero {
   width: 100%;
   padding: 200px 0;
@@ -155,31 +152,34 @@ h6 {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  display: block;
   width: 700px;
   margin: 0 auto 30px;   
 }
 
-.hero .btn {
+.btn {
   background-color: var(--main-decor-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border: none;
-  font: 700 16px/1.87 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87 ;
+  letter-spacing: 0.06em;
   padding: 10px 32px;
 }
 
 .btn:hover,
 .btn:focus {
-  background-color: #188CE8;
+  background-color: #0a81e3;
 }
 
+/* Our Features */
 .feature {
   margin: 94px auto; 
 }
 
- .features {
+.features {
   flex-wrap: wrap; 
-     }
+}
 
 .feature h2 {
   display: none;
@@ -187,32 +187,30 @@ h6 {
 
 .features li {
   width: 270px;
-  
 }
 
 .feature p {
   line-height: 1.71;
+  font-weight: 400;
 }
 
 .feature h3 {
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .main li:not(:last-child) {
   margin-right: 30px;
 }
 
-.container h3 {
-  margin-bottom: 10px;
-}
-
+/* What we are doing */
 .portfolio {
   margin-bottom: 94px;
   }
 
 .about-us {
   flex-wrap: wrap;
-  }
+}
 
 .team h2,
 .portfolio h2 {
@@ -221,7 +219,7 @@ h6 {
   margin-bottom: 50px;
   line-height: 1.166;
 }
-
+/* Our team */
 .team {
   background-color: var(--team-button-color);
   padding-top: 94px;
@@ -233,30 +231,33 @@ h6 {
   justify-content: center;
 }
 
-.team-cards h3 {
-  margin-top: 30px;
-  margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 16px;
-}
-.team-cards p {
-  margin-bottom: 30px;
-}
 .team-cards {
   flex-wrap: wrap;
 }
-.team-cards li {
-  background-color: var(--main-light-color);
+
+.team-card h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 500;
 }
 
+.team-card p {
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.team-card {
+  background-color: var(--main-light-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 
 .works h1 {
   display: none;
 }
 
 .btns {
-  justify-content: center;
-  padding-top: 94px;
+  margin-top: 94px;
   margin-bottom: 50px;
   flex-wrap: wrap;
 }
@@ -266,13 +267,14 @@ h6 {
 }
 
 .btns button {
+  background-color: var(--team-button-color);
   color: var(--fonts-color);
   border: none;
   border-radius: 4px;
   padding: 6px 22px;
-  font: 500 16px/1.625 'Roboto', sans-serif;
-  letter-spacing: 0.03em;
- 
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
 }
 
 .btns button:hover,
@@ -283,13 +285,10 @@ h6 {
   cursor: pointer;
 }
 
-
-
 .work-cards {
   flex-wrap: wrap;
   padding-bottom: 64px;
 }
-
 
 .card {
   padding-bottom: 20px;
@@ -306,20 +305,22 @@ h6 {
   margin-left: 24px;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
-  
+  letter-spacing: 0.06em; 
 }
 
 .card p {
   margin-top: 4px;
   margin-left: 24px;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.875;
 }
 
+/* Footer */
 .footer {
   width: 100%;
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
   padding-left: 215px;
   text-align: left;
 }
@@ -338,7 +339,8 @@ h6 {
 }
 
 .footer-contacts {
-   line-height: 1.71;
+  font-weight: 400;
+  line-height: 1.71;
 }
 
 .map-link:focus,
